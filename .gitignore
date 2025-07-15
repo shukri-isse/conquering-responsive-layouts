@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Node projects (if you ever install npm packages later)
+node_modules/
+package-lock.json
+
+# VS Code settings (optional)
+.vscode/
+
+# Logs
+*.log
+
+# Build/deployment folders (if you ever add tools like Vite, SASS, or bundlers)
+dist/
+build/
