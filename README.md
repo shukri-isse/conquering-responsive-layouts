@@ -1,5 +1,5 @@
 # 🎨 Conquering Responsive Layouts 💻✨  
-Hi! I'm learning responsive web design through [Kevin Powell’s course](https://conqueringresponsive.com/) and documenting my 21-day journey here 🌱. This repo keeps me accountable, tracks my growth, and shows off my work publicly 💪
+Hi! I'm learning responsive web design through [Kevin Powell’s course](https://courses.kevinpowell.co/conquering-responsive-layouts) and documenting my 21-day journey here 🌱. This repo keeps me accountable, tracks my growth, and shows off my work publicly 💪
 
 ---
 
