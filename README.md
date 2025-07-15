@@ -1,32 +1,27 @@
-# Conquering Responsive Design 🌐
-
-Welcome! This repository contains my progress through Kevin Powell’s [Conquering Responsive Design](https://conqueringresponsive.com/) course.
-
-I've structured this repo by day, with each day containing folders for the corresponding lessons and challenges. This layout helps me clearly track my daily progress and reflect on how my skills have grown over the 21-day course.
+# 🎨 Conquering Responsive Layouts 💻✨  
+Hi! I'm learning responsive web design through [Kevin Powell’s course](https://conqueringresponsive.com/) and documenting my 21-day journey here. 🌱  
+This repo keeps me accountable, tracks my growth, and shows off my work publicly 💪
 
 ---
 
-## 📅 Folder Structure
+## 🗂️ Folder Structure
+
+Each day has its own folder with:
+
+- 📚 **Lessons** — `Lesson1`, `Lesson2`, etc.
+- 🧩 **Challenge** — `Challenge01`, `Challenge02`, etc.
 
 ```plaintext
-Conquering Responsive Design/
+Conquering Responsive Layouts/
 ├── Day01/
 │   ├── Lesson1/
-│   │   ├── index.html
-│   │   └── style.css
 │   ├── Lesson2/
-│   │   ├── index.html
-│   │   └── style.css
 │   ├── Lesson3/
-│   │   ├── index.html
-│   │   └── style.css
 │   └── Challenge01/
-│       ├── index.html
-│       └── style.css
 ├── Day02/
 │   ├── Lesson1/
 │   ├── Lesson2/
-│   ├── Lesson3/
 │   └── Challenge02/
 ...
 ├── Day21/
+
