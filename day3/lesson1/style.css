@@ -10,17 +10,14 @@ body {
 .container {
   background: #23424a;
   color: white;
+  padding: 50px 50px 150px 50px;
 
   width: 80%;
+  /* once maximum width of 750px is reached, can not get any bigger */
+  max-width: 750px;
   margin: 0 auto;
-
-  /* increased padding to mmake it look similar to when we added height*/
-  padding: 3em;
-  /*remove height*/
-  /* height: 300px; */
 }
 
 .intro-content {
-  /*limit childs size by 50%*/
   width: 50%;
 }
