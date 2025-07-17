@@ -1,0 +1,87 @@
+/* originally used em */
+/* Assumes browser default font-size = 16px */
+
+* {
+    box-sizing: border-box;
+}
+h2 {
+    /* font-size: 2.25em; 2.25 * 16px = 36px */
+    font-size: 2.25rem;
+}
+
+/* Each nested <ul> multiplies the font size by 1.125 relative to its parent.
+   So:
+   - First <ul>: 1.125 × base font (16px) = 18px
+   - Second <ul>: 1.125 × 18px = 20.25px
+   - Third <ul>: 1.125 × 20.25px = ~22.78px
+   Compounded: 1.125³ ≈ 1.4238 → ~22.78px
+*/
+
+/* p,
+ul {
+    font-size: 1.125rem;
+} */
+
+.cta {
+    background: #ee6352;
+    padding: 1em; /* 1em = 1.2rem or 19.2px (using .cta font-size) */
+    color: rgba(0, 0, 0, 0.8);
+    /* font-size: 1.2em; */
+    font-size: 1.2rem; /* 19.2px */
+}
+
+.cta__title {
+    margin: 0 0 0.5em; /* 1em = 3rem or 48px -> 0.5em = 24px (using .cta__title font-size) */
+    color: white;
+    /* font-size: 3em; 3em * (parent .cta 1.2em) = 3.6em * 16 = 57.6px  */
+    font-size: 3rem; /* 48px */
+}
+
+.cta__btn {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5em 1.5em; /* 1em = 1.25rem or 20px -> 0.5em = 10px and 1.5em = 15px (using .cta__btn font-size) */
+    background: white;
+    transition: background 250ms ;
+    /* font-size: 1.25em; 1.25em *  (parent p 1.125em) * (parent .cta 1.2em)  = 1.6875em * 16 = 27px */
+    font-size: 1.25rem; /* 20px */
+}
+
+.cta__btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.cta__body {
+    /* font-size: 1.25em; */
+    font-size: 1.25rem; /* 20px */
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+/* Rest of code is cut off so I used my imagination */
+}
+
+.content {
+    /* doesn't have a font-size declared so inherits it from root 1rem or 16px */
+    background: white;
+    padding: 2em; /* 1em = 1rem or 16px -> 2em = 2rem or 32px (using root font-size) */
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem; /*8 px*/
+}
+
+.title {
+  font-size: 2.5rem; /*40px*/
+  color: #ee6352;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1em; /* 1em = 2.5rem or 40px (using .title font-size) */
+}
