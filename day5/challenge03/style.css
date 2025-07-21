@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+/* Roboto Black */
+h1 {
+    font-family: "Roboto Black", sans-serif;
+    font-weight: 900;
+    font-size: 41px;
+}
+
+/* Roboto Regular */
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #d8d2d2;
+    padding-bottom: 1.25em;
+}
+
+.button {
+    background-color: #38CFD9;
+    outline: none;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 30%;
+    padding: 1em;
+}
+
+/* Roboto Bold */
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    text-decoration: none;
+    color: #23424a;
+}
+
+.intro {
+    background: #23424a;
+    color: white;
+    padding: 9.375rem 0; /*150px*/
+}
+
+.container {
+    width: 50%;
+    max-width: 750px;
+    /* margin: 0 auto; */
+    margin-left: 8%;
+}
+
+/* .intro-content {
+    width: 100%;
+} */

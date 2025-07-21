@@ -23,8 +23,7 @@ body {
   font-family: sans-serif;
 }
 
-/* when using container classes limit styling to just an actual width (always a percantage),
-a maximum width (always a px value), and a margin of 0 auto for centering */
+/* when using container classes limit styling to just an actual width (always a percantage), a maximum width (always a px value), and a margin of 0 auto for centering */
 .container {
   width: 80%;
   max-width: 750px;
