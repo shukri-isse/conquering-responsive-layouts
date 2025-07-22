@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* 21px */
+    font-size: 1.3125rem;
+}
+
+h1 {
+    /* 48px */
+    font-size: 3rem;
+}
+
+.container {
+    /* 80% of parent which is 100% of screen */
+    /* Limits the content’s max width (to 900px), centers it with margin: 0 auto */
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    /* border: 2px solid yellow; */
+}
+
+.hero {
+    /* padding of 0 on the sides makes the content stick to the sides */
+    /* we need a container to limit the size of content */
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #fff;
+}
+
+.hero__text {
+    /* Shrinks the text column to 60% of the container’s width so it doesn’t stretch across the whole screen */
+    width: 60%;
+    /* border: 2px solid pink; */
+}
+
+/* ems are proportionate to font size */
+.hero p {
+    margin-top: 3em;
+}
+
+.btn{
+    /* inline: sits in a line with other elements (doesn’t force a new row) */
+    /* block: lets you set width, height, padding, and margin */
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    /* general rule make border radius is same as height of element to make round corners or use very big number*/
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}

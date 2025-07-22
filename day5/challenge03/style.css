@@ -5,56 +5,86 @@
 
 body {
     margin: 0;
+    /* so everything inherits this font family */
+    font-family: "Roboto", sans-serif;
+    /* so everything inherits text size 21px */
+    /* font-size: 21px; */
+    /* change font size from px to rem */
+    font-size: 1.3125rem;
+
 }
 
 /* Roboto Black */
 h1 {
-    font-family: "Roboto Black", sans-serif;
+    /* just 'Roboto for font family */
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 41px;
+    /* font-size: 41px; */
+    /* change font size from px to rem */
+    font-size: 2.5625rem;
 }
 
 /* Roboto Regular */
-p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 21px;
-    color: #d8d2d2;
-    padding-bottom: 1.25em;
+/* p { */
+    /* font-family: "Roboto", sans-serif; */
+    /* font-weight: 400; */
+    /* font-size: 21px; */
+    /* color: #d8d2d2; */
+    /* only add margin to the bottom of hero text paragraph specifically */
+    /* margin-bottom: 1.25em; */
+/* } */
+
+.intro-content p {
+    margin-bottom: 3em;
 }
 
+/* combine button class and a tag logic and move it into button class*/
+/* Roboto Bold */
 .button {
     background-color: #38CFD9;
     outline: none;
     border-style: none;
-    border-radius: 30px;
+    border-radius: 100px;
     cursor: pointer;
-    width: 30%;
-    padding: 1em;
-}
-
-/* Roboto Bold */
-a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 21px;
+    /* rempove width way too rigid instead make display inline block */
+    /* width: 30%; */
+    display: inline-block;
+    /* tweak padding size */
+    padding: .75em 2em;
+    /* font-family: "Roboto", sans-serif; */
+    /* font-weight: 700; */
+    /* font-size: 21px; */
     text-decoration: none;
     color: #23424a;
 }
 
+/* add hover and focus for button */
+.button:hover,
+.button:focus {
+    opacity: .75;
+}
+
+
+/* hero section */
 .intro {
     background: #23424a;
     color: white;
-    padding: 9.375rem 0; /*150px*/
+    /* change padding for top and bottom no padding for sides */
+    padding: 100px 0;
+    /* padding: 9.375em 0; 150px */
 }
 
 .container {
-    width: 50%;
-    max-width: 750px;
-    /* margin: 0 auto; */
-    margin-left: 8%;
+    width: 80%;
+    /* max-width: 750px; */
+    /* tweak/enlarge max-width */
+    max-width: 1100px;
+    /* center like usual */
+    margin: 0 auto;
+    /* margin-left: 8%; */
 }
 
-/* .intro-content {
-    width: 100%;
-} */
+/* hero text */
+.intro-content {
+    width: 60%;
+}
