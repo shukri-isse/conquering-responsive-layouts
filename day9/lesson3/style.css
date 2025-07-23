@@ -1,24 +1,3 @@
-/* 
-////// For this challenge ///////
-
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
-
-// Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
-
-   */
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -31,18 +10,25 @@ body {
 
 h1 {
     font-size: 3rem;
+    margin-top: 0;
 }
 
 .container {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
+    /* border: solid 2px green; */
 }
 
 .row {
     /* display: flex => flex container */
     display: flex;
-
+    /* justify content is for spacing out in between thingd*/
+    /* defautlt is justify-content: flex-start; where they are stuck together, space ro the right/end, content moved to front of container*/
+    /* flex end: space to the left/start content moved to end of container */
+    /* center; centers them */
+    /* space between: all space is between and leftmost item at very left and rightmost item at the very right */
+    justify-content: space-between;
     /* can't use yet */
     gap: 30px;
 }
@@ -63,7 +49,19 @@ h1 {
 }
 
 .hero__text {
-    width: 60%;
+    /* this is 60% */
+    width: 62%;
+    /* together hero text and hero img take up only 90% of the container */
+    /* 60 + 30 + 10 so it takes up 100% of the container */
+    /* margin-right: 10%; */
+}
+
+
+.hero__img {
+    align-self: flex-start;
+    /* border: 2px solid red; */
+    /* this is 30% */
+    width: 30%;
 }
 
 .hero p {
