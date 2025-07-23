@@ -9,12 +9,17 @@
 </head>
 <body>
     <div class="hero">
-        <div class="container">
+        <div class="container row">
             <div class="hero__text">
                 <h1>Responsive layouts don’t have to be a struggle</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <a href="#" class="btn">I want to learn</a>
             </div>
+            <!-- can place inside a div to avoid img stretching, that way only div stretches -->
+            <!-- <div style="border: 2px solid pink"> -->
+                <!-- or you can add a class to image and style using align-self: flex-start -->
+                <img class="hero__img" src="img/hero-img.jpg" alt="website sketches">
+            <!-- </div> -->
         </div>
     </div>
     <!-- add sections to set padding and background-colors -->
