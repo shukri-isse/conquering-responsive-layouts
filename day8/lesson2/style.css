@@ -24,6 +24,8 @@ h1 {
     display: flex;
     /* default = row */
     flex-direction: row;
+
+    /* gap: 30px;     */
 }
 
 .col {
@@ -31,6 +33,12 @@ h1 {
     width: 100%;
 }
 
+/* +: combinator */
+/* selecting adjacent sibling => if col has a col before it, it's selected*/
+.col + .col {
+    /* this simulates same effect as using gap: 100px; */
+    margin-left: 30px
+}
 .hero {
     padding: 100px 0;
     background-color: #23424A;
