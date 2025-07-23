@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+/* ensures images will shrink when container shrinks */
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* border: solid 2px green; */
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+    /* justify content is for spacing out in between thingd*/
+    /* defautlt is justify-content: flex-start; where they are stuck together, space ro the right/end, content moved to front of container*/
+    /* flex end: space to the left/start content moved to end of container */
+    /* center; centers them */
+    /* space between: all space is between and leftmost item at very left and rightmost item at the very right */
+    justify-content: space-between;
+    /* can't use yet */
+    gap: 30px;
+}
+
+.col {
+    /* these are now flex items */
+    width: 100%;
+}
+
+/* .col + .col {
+    margin-left: 30px;
+} */
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text {
+    /* this is 60% */
+    width: 62%;
+    /* together hero text and hero img take up only 90% of the container */
+    /* 60 + 30 + 10 so it takes up 100% of the container */
+    /* margin-right: 10%; */
+}
+
+
+.hero__img {
+    align-self: flex-start;
+    /* border: 2px solid red; */
+    /* this is 30% */
+    width: 30%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.three-cols {
+    padding: 3em 0;
+    text-align: center;
+}
+
+.two-cols {
+    padding: 3em 0;
+    /* so everthing insiide inherits the text color */
+    color: #fff;
+    text-align: center;
+}
+
+.three-cols__title-purple {
+    color: #87629A;
+}
+
+
+/* add background color to 2 cols section */
+.two-cols {
+    background-color: #136C72;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge time!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="container row">
+            <div class="hero__text">
+                <h1>Responsive layouts don’t have to be a struggle</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#" class="btn">I want to learn</a>
+            </div>
+            <!-- can place inside a div to avoid img stretching, that way only div stretches -->
+            <div class="hero__img">
+                <img src="img/hero-img.jpg" alt="website sketches">
+            </div>
+        </div>
+    </div>
+    <!-- add sections to set padding and background-colors -->
+    <section class="three-cols">
+        <!-- container holds content in the center of page, has a percantage width and max-width so it will never grow too big-->
+        <div class="container">
+            <!-- creating a display flex -->
+            <div class="row">
+                <!-- cols just hold the content -->
+                <div class="col">
+                    <!-- title living inside two cols that is purple -->
+                    <h2 class="three-cols__title-purple">Cheap</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2 class="three-cols__title-purple">Quick</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2 class="three-cols__title-purple">Affordable</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="two-cols">
+        <!-- container holds everything centers them -->
+        <div class="container">
+            <!-- applies flex direction: row makes them into columns -->
+            <div class="row">
+                <div class="col">
+                    <h2>Cheap</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col">
+                    <h2>Quick</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
