@@ -89,3 +89,68 @@ h1 {
 .btn:focus {
     opacity: .75; 
 }
+.about-and-features {
+    /* display: block;
+    position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    padding: 3em 0;
+}
+
+.description__container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1100px;
+}
+
+.description__title {
+    /* 36px */
+    font-size: 2.25rem;
+    font-weight: 900; /*Roboto Black*/
+    color: #136C72;
+}
+
+.description__font {
+    /* 21px */
+    font-size: 1.3125rem;
+}
+
+.features {
+    background-color: #136C72;
+    color: #fff;
+    text-align: center;
+    padding: 3em 0;
+    width: 30%;
+    /* right: 0;
+    bottom: 0;
+    z-index: 1; */
+
+}
+
+.card-container {
+    width: 10%;
+    max-width: 360px;
+    /* margin: 0 auto; */
+}
+
+/* applies flex */
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card__title {
+    /* 36px */
+    font-size: 2.25rem;
+}
+
+.card__font {
+    /* 21px */
+    font-size: 1.3125rem;
+}
